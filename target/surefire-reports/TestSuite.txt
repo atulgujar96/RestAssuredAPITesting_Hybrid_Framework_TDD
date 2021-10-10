@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 13, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 16.851 s <<< FAILURE! - in TestSuite
+testcases.TC001_Get_All_Employee.checkContentLength  Time elapsed: 0.015 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at testcases.TC001_Get_All_Employee.checkContentLength(TC001_Get_All_Employee.java:94)
+
+testcases.TC001_Get_All_Employee.checkResponseTime  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at testcases.TC001_Get_All_Employee.checkResponseTime(TC001_Get_All_Employee.java:54)
+
+testcases.TC003_Data_Driven.createUsers[sachin, 49000, 24](2)  Time elapsed: 1.318 s  <<< FAILURE!
+java.lang.AssertionError: expected:<200> but was:<429>
+	at testcases.TC003_Data_Driven.createUsers(TC003_Data_Driven.java:54)
+
+testcases.TC003_Data_Driven.createUsers[nitin, 50000, 36](3)  Time elapsed: 1.246 s  <<< FAILURE!
+java.lang.AssertionError: expected:<200> but was:<429>
+	at testcases.TC003_Data_Driven.createUsers(TC003_Data_Driven.java:54)
+
+testcases.TC003_Data_Driven.createUsers[ganesh, 60000, 45](4)  Time elapsed: 1.282 s  <<< FAILURE!
+java.lang.AssertionError: expected:<200> but was:<429>
+	at testcases.TC003_Data_Driven.createUsers(TC003_Data_Driven.java:54)
+

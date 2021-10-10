@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="utilities.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)" verbose="0">
+    <classes>
+      <class name="testcases.TC001_Get_All_Employee">
+        <methods>
+          <include name="getAllEmployees"/>
+          <include name="tearDown"/>
+          <include name="checkResponseTime"/>
+          <include name="checkContentLength"/>
+        </methods>
+      </class> <!-- testcases.TC001_Get_All_Employee -->
+      <class name="testcases.TC003_Data_Driven">
+        <methods>
+          <include name="createUsers" invocation-numbers="1 2 3"/>
+        </methods>
+      </class> <!-- testcases.TC003_Data_Driven -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
